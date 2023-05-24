@@ -5,7 +5,7 @@ This project name combines the elements of rainfall and AI while emphasizing the
 #Dataset Reference
 https://www.kaggle.com/datasets/jsphyg/weather-dataset-rattle-package
 
-#Initial draft:
+# Initial draft:
 
 ```python
 import pandas as pd
