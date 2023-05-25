@@ -5,8 +5,9 @@ This project name combines the elements of rainfall and AI while emphasizing the
 #Dataset Reference
 https://www.kaggle.com/datasets/jsphyg/weather-dataset-rattle-package
 
-Initial draft:
+# Initial draft:
 
+```python
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
 
@@ -50,3 +51,4 @@ y_pred = clf.predict(X_test)
 # Evaluate the accuracy of the model
 accuracy = accuracy_score(y_test, y_pred)
 print('Accuracy:', accuracy*100)
+```
