@@ -5,50 +5,20 @@ This project name combines the elements of rainfall and AI while emphasizing the
 #Dataset Reference
 https://www.kaggle.com/datasets/jsphyg/weather-dataset-rattle-package
 
-# Initial draft:
+| Parameters       | Statistics |
+| ---------------- | ---------- |
+| Total Records    | 145,460    |
+| Total Features   | 23         |
+| Date Field       | 1          |
+| Text Fields      | 10         |
+| Numeric Fields   | 12         |
+| Missing values   | Yes        |
 
-```python
-import pandas as pd
-from sklearn.preprocessing import MinMaxScaler
 
-# Load dataset
-fullFileName = ''
+## Results
 
-df = pd.read_csv(fullFileName)
-
-# Convert the date column to integer format
-ref_date = pd.Timestamp('1900-01-01')
-df['Date'] = (pd.to_datetime(df['Date']) - ref_date).dt.days
-
-# Create a MinMaxScaler object
-scaler = MinMaxScaler()
-
-# Min-Max scale the 'Total Volume' column
-df['AveragePrice'] = scaler.fit_transform(df[['AveragePrice']])
-
-# Print the scaled dataframe
-print(df) 
-
-import pandas as pd
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
-
-X = df.values[:,1:13]
-Y = df.values[:,0]
-# Split the dataset into training and testing sets
-X_train, X_test, y_train, y_test = train_test_split(X,Y,test_size=0.3, random_state=50)
-
-# Create a decision tree classifier object
-clf = DecisionTreeClassifier()
-
-# Train the decision tree classifier on the training data
-clf.fit(X_train, y_train)
-
-# Make predictions on the testing data
-y_pred = clf.predict(X_test)
-
-# Evaluate the accuracy of the model
-accuracy = accuracy_score(y_test, y_pred)
-print('Accuracy:', accuracy*100)
-```
+| Model Name                             | Accuracy | F1 Score   |
+| -------------------------------------- | -------- | ---------- |
+| Decision Tree (Supervised) W/O parameter | 97.2%    | 0.9928057  |
+| Decision Tree (Supervised) With parameter | 99.50%    | 0.9932941  |
+| Decision Tree (Semi-Supervised)         | 97.4%    | -          |
