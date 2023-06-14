@@ -14,3 +14,11 @@ https://www.kaggle.com/datasets/jsphyg/weather-dataset-rattle-package
 | Numeric Fields   | 12         |
 | Missing values   | Yes        |
 
+
+## Results
+
+| Model Name                             | Accuracy | F1 Score   |
+| -------------------------------------- | -------- | ---------- |
+| Decision Tree (Supervised) W/O parameter | 97.2%    | 0.9928057  |
+| Decision Tree (Supervised) With parameter | 99.50%    | 0.9932941  |
+| Decision Tree (Semi-Supervised)         | 97.4%    | -          |
