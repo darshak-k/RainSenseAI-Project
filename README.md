@@ -52,7 +52,7 @@ Table: Comparison of 4 models.
 ## Usage
 To use RainSenseAI, follow these steps:
 1. Clone the repository: `git clone https://github.com/your-username/RainSenseAI.git`
-2. Install the required dependencies such as numpy, matplotlib, tabulate, seaborn, sklearn, scipy, torch,
+2. Install the required dependencies such as numpy, matplotlib, tabulate, seaborn, sklearn, scipy, torch, thop
 3. Run the file sequentially
 
 Make sure to have Python 3.7 or higher installed on your system.
