@@ -12,7 +12,6 @@ https://www.kaggle.com/datasets/jsphyg/weather-dataset-rattle-package
 | Date Field       | 1          |
 | Text Fields      | 10         |
 | Numeric Fields   | 12         |
-| Missing values   | Yes        |
 
 
 ## Results
