@@ -17,8 +17,12 @@ https://www.kaggle.com/datasets/jsphyg/weather-dataset-rattle-package
 
 ## Results
 
-| Model Name                             | Accuracy | F1 Score   |
-| -------------------------------------- | -------- | ---------- |
-| Decision Tree (Supervised) W/O parameter | 97.2%    | 0.9928057  |
-| Decision Tree (Supervised) With parameter | 99.50%    | 0.9932941  |
-| Decision Tree (Semi-Supervised)         | 97.4%    | -          |
+| Model Name                             | Accuracy | Precision | Recall | F1-Score | ROC  |
+| -------------------------------------- | -------- | --------- | ------ | -------- | ---- |
+| Supervised W/O parameter                | 97.4%    | 0.983     | 1.0    | 0.991    | 1.0  |
+| Supervised With parameter               | 99.50%   | 1.0       | 1.0    | 1.0      | 1.0  |
+| Semi-Supervised                         | 97.4%    | 1.0       | 1.0    | 1.0      | 1.0  |
+| Recurrent Neural Network                | 100%     | 1.0       | 1.0    | 1.0      | 1.0  |
+
+Table: Comparison of 4 models.
+
